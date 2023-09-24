@@ -1,0 +1,23 @@
+﻿version: '3'
+services:
+  phpmyfaq:
+    image: phpmyfaq/phpmyfaq
+    # volumes:
+    #   - ./.htaccess:/var/www/html/.htaccess # こちらがマウント設定
+    # Dockerfileに記述する場合は、こちらをコメントアウト
+    # build: .
+    # 起動時に実行するスクリプトを指定
+    # entrypoint: ["./entrypoint.sh"]
+    environment:
+      - PMF_DB_HOST=mysql:3306 # <-- これを追加
+      - PMF_DB_USER=phpmyfaq
+      - PMF_DB_PASS=my-secret-pw
+    ports:
+      - "8080:80"
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+      MYSQL_DATABASE: phpmyfaq
+      MYSQL_USER: phpmyfaq
+      MYSQL_PASSWORD: phpmyfaq

@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^old-page\.html$ new-page.html [R=301,L]
+
+Order Deny,Allow
+Deny from all
+Allow from 192.168.1.1
+
