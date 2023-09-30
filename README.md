@@ -11,7 +11,8 @@
 ### FTPサーバ
 * [vsftp](./vsftp): FTPサーバ
 * [ProFPTd](./ProFPTd): FTPサーバ
-
+### Gameサーバ
+* [Minecraft](./Minecraft): ゲームサーバ
 ## TODO
 * [OpenLDAP](./OpenLDAP): LDAPサーバ
 * [OpenSSH](./OpenSSH): SSHサーバ
