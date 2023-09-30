@@ -12,7 +12,7 @@
 * [vsftp](./vsftp): FTPサーバ
 * [ProFPTd](./ProFPTd): FTPサーバ
 ### Gameサーバ
-* [Minecraft](./Minecraft): ゲームサーバ
+* [Minecraft](./Minecraft): スウェーデンのゲーム開発会社Mojang Studiosによって開発されたサンドボックス型のビデオゲームです。
 ## TODO
 * [OpenLDAP](./OpenLDAP): LDAPサーバ
 * [OpenSSH](./OpenSSH): SSHサーバ
