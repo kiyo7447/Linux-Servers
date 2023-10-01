@@ -9,8 +9,9 @@
 * [Motion](./Motion): 監視カメラ
 * [Prometheus](./Prometheus): メトリクス収集ツール
 ### FTPサーバ
-* [vsftp](./vsftp): FTPサーバ
-* [ProFPTd](./ProFPTd): FTPサーバ
+* [vsftp](./vsftp): FTPサーバ。vsftpd（Very Secure FTP Daemon）は非常に安全で、高速なFTPサーバです。（いろいろ試したが、うまく行かなかった）
+* [ProFPTd](./ProFPTd): FTPサーバ（まだやっていない）
+)
 ### Gameサーバ
 * [Minecraft](./Minecraft): スウェーデンのゲーム開発会社Mojang Studiosによって開発されたサンドボックス型のビデオゲームです。
 ## TODO

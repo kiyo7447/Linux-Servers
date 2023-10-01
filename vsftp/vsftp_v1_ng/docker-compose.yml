@@ -1,0 +1,18 @@
+﻿version: '3'
+services:
+  ftp-server:
+    image: fauria/vsftpd
+    ports:
+      - "21:21"
+      - "20:20"
+      - "21100-21110:21100-21110"
+    volumes:
+      # - ./vsftpd.conf:/etc/vsftpd/vsftpd.conf
+      - ./data:/home/vsftpd  # 任意のデータディレクトリ
+    environment:
+      FTP_USER: myuser  # 任意のユーザ名
+      FTP_PASS: mypass  # 任意のパスワード
+      PASV_ADDRESS: 127.0.0.1
+      PASV_MIN_PORT: 21100
+      PASV_MAX_PORT: 21110
+    privileged: true
