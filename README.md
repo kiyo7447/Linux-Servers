@@ -11,7 +11,8 @@
 ### FTPサーバ
 * [vsftp](./vsftp): FTPサーバ。vsftpd（Very Secure FTP Daemon）は非常に安全で、高速なFTPサーバです。（いろいろ試したが、うまく行かなかった）
 * [ProFPTd](./ProFPTd): FTPサーバ（まだやっていない）
-)
+### プロジェクト関連 
+* [GitLab](./GitLab): Gitリポジトリ管理ツール
 ### Gameサーバ
 * [Minecraft](./Minecraft): スウェーデンのゲーム開発会社Mojang Studiosによって開発されたサンドボックス型のビデオゲームです。
 ## TODO
@@ -24,7 +25,6 @@
 
 * [Jenkins](./Jenkins): CI/CDツール
 
-* [GitLab](./GitLab): Gitリポジトリ管理ツール
 * [SonarQube](./SonarQube): ソースコード解析ツール
 * [Nexus](./Nexus): アーティファクト管理ツール
 * [Hadoop](./Hadoop): ビッグデータ分析ツール
