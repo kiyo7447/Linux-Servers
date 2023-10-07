@@ -17,6 +17,8 @@
 * [Minecraft](./Minecraft): スウェーデンのゲーム開発会社Mojang Studiosによって開発されたサンドボックス型のビデオゲームです。
 ## Database
 * [MongoDB](./Databases/MongoDB): NoSQLデータベース
+* [ZooKeeperHBase](./Databases/ZooKeeperHBase): ZooKeeperは、分散アプリケーションのたれたオープンソースの分散型ワイドカラムストアです。HBaseは、Apacheソフトウェア財団によって開発さめのオープンソースサーバーです。
+
 ### TODO
 * [MySQL](./Databases/MySQL): 開発用データベース
 * [Redis](./Databases/Redis): キャッシュサーバ
@@ -24,7 +26,6 @@
 * [SQLServer](./Databases/SQLServer): Microsoft SQL Server
 * [MariaDB](./Databases/MariaDB): MySQLの派生データベース
 * [Cassandra](./Databases/Cassandra): Cassandraは、分散型データベース管理システムであり、Apacheソフトウェア財団によって開発されています。
-* [ZooKeeper](./Databases/ZooKeeper): ZooKeeperは、分散アプリケーションのためのオープンソースサーバーです。
 * [Kafka](./Databases/Kafka): Apache Kafkaは、分散ストリーミングプラットフォームです。
 * [Elasticsearch](./Databases/Elasticsearch): Elasticsearchは、Apache Luceneをベースにしたオープンソースの検索エンジンです。
 * [Neo4j](./Databases/Neo4j): Neo4jは、グラフデータベース管理システムです。
@@ -36,7 +37,6 @@
 * [ArangoDB](./Databases/ArangoDB): ArangoDBは、ArangoDB GmbHによって開発されたオープンソースのNoSQLデータベースです。
 * [CockroachDB](./Databases/CockroachDB): CockroachDBは、Cockroach Labsによって開発されたオープンソースの分散SQLデータベースです。
 * [RabbitMQ](./Databases/RabbitMQ): RabbitMQは、Pivotal Softwareによって開発されたオープンソースのメッセージブローカーソフトウェアです。
-* [HBase](./Databases/HBase): HBaseは、Apacheソフトウェア財団によって開発されたオープンソースの分散型ワイドカラムストアです。
 * [Hive](./Databases/Hive): Hiveは、Apacheソフトウェア財団によって開発されたオープンソースのデータウェアハウスです。
 * [Presto](./Databases/Presto): Prestoは、Facebookによって開発されたオープンソースの分散SQLクエリエンジンです。
 * [CrateDB](./Databases/CrateDB): CrateDBは、Crate.ioによって開発されたオープンソースの分散SQLデータベースです。

@@ -1,0 +1,55 @@
+﻿version: '3'
+services:
+  zookeeper:
+    image: zookeeper:latest
+    ports:
+      - "2181:2181"
+
+  hbase-master:
+    image: dajobe/hbase:latest
+    environment:
+      - HBASE_ZOOKEEPER_QUORUM=zookeeper
+      - HBASE_MANAGES_ZK=false
+    ports:
+      - "16010:16010"
+    depends_on:
+      - zookeeper
+    volumes:
+      - hbase-master-data:/data
+
+  hbase-regionserver:
+    image: dajobe/hbase:latest
+    environment:
+      - HBASE_ZOOKEEPER_QUORUM=zookeeper
+      - HBASE_MANAGES_ZK=false
+    depends_on:
+      - hbase-master
+    volumes:
+      - hbase-region-data:/data
+
+  hbase-thrift:
+    image: dajobe/hbase:latest
+    environment:
+      - HBASE_ZOOKEEPER_QUORUM=zookeeper
+      - HBASE_MANAGES_ZK=false
+    command: ["hbase-daemon.sh", "foreground_start", "thrift"]
+    ports:
+      - "9090:9090"
+    depends_on:
+      - hbase-master
+
+  hue:
+    image: gethue/hue:latest
+    ports:
+      - "8888:8888"
+    environment:
+      - HUE_CONF_DIR=/usr/share/hue/desktop/conf
+
+  zeppelin:
+    image: apache/zeppelin
+    ports:
+      - "8080:8080"
+
+volumes:
+  hbase-master-data:
+  hbase-region-data:
